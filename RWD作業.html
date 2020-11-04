@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
+      box-sizing: border-box;
+      transition: 1s;
+    }
+    .container{
+      width: 100%;
+      margin: auto;
+      padding: 0 15px;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+    .col{
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 50%;
+    }
+    .h3 {
+      align-self: flex-start;
+      padding-top: 5%;
+    }
+    .h2{
+      padding-top: 2%;
+    }
+    .w-50{
+      width: 50%;
+    }
+    .text{
+      font-size: 0.4rem;
+    }
+    
+   .line{
+     width: 100%;
+     height: 1px;
+     background: rgb(143, 143, 143);
+     margin-top: 2%;
+   }
+
+   .isShow{
+     display: block;
+   }
+
+   @media (min-width: 992px) {
+
+    html,
+    body {
+      height: 100%;
+    }    
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }     
+
+    #b1{       
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;            
+    }
+    #b1 img {
+      width: 18%;
+    }
+    #b1 h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding-top: 0.5%;
+    }
+    #b1 h3{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    #b1 p{
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+
+    #b2 {
+      position: absolute;
+      top: 10%; 
+      left: 0%;
+    }
+    #b2 .line {
+      transform: rotate(15deg);
+      position: absolute;
+      top: 120%;
+      left: 70%;
+      width: 450px;
+    }
+
+    #b3 {
+      position: absolute;
+      top: 3%; 
+      left: 20%;
+    }
+    #b3 .line {
+      transform: rotate(40deg);
+      position: absolute;
+      top: 100%;
+      left: 65%;
+      width: 150px;
+    }
+
+    #b4 {
+      position: absolute;
+      top: 55%; 
+      left: 5%;
+    }
+    #b4 .line {
+      transform: rotate(-20deg);
+      position: absolute;
+      top: 0%;
+      left: 70%;
+      width: 380px;
+    }
+
+    #b5 {
+      position: absolute;
+      top: 70%; 
+      left: 20%;
+    }
+    #b5 .line {
+      transform: rotate(-40deg);
+      position: absolute;
+      top: -30%;
+      left: 60%;
+      width: 190px;
+    }
+
+    #b6 {
+      position: absolute;
+      top: 3%; 
+      left: 60%;
+    }
+    #b6 .line {
+      transform: rotate(-30deg);
+      position: absolute;
+      top: 95%;
+      left: -10%;
+      width: 150px;
+    }
+
+    #b7 {
+      position: absolute;
+      top: 20%; 
+      left: 75%;
+    }
+    #b7 .line {
+      transform: rotate(-10deg);
+      position: absolute;
+      top: 95%;
+      left: -70%;
+      width: 350px;
+    }
+
+    #b8 {
+      position: absolute;
+      top: 68%; 
+      left: 65%;
+    }
+    #b8 .line {
+      transform: rotate(30deg);
+      position: absolute;
+      top: -25%;
+      left: -35%;
+      width: 230px;
+    }
+      
+    .h3{
+      align-self: center;
+      padding-top: 1%;
+    }
+
+    img {
+      width: 40%;
+    }
+
+    .isShow{
+      display: none;
+    }
+  }
+
+</style>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="box" id="b1">
+                <img src="./tai.png">
+                <h2>泰山職訓局</h2>
+                <h3>從零開始的網頁設計課程</h3>
+                <p>轉職網頁開發人員　掌握就業必備技能
+                    <br>
+                    由淺入深學習技術　強化職場的競爭力
+                </p>
+                <div class="line isShow"></div>
+            </div>
+            <div class="box" id="b2">
+              <img src="./HTML..png">              
+              <h3 class="h3">HTML</h3>
+              <p class="isShow">
+                超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。
+                HTML 是一種基礎技術，常與 CSS、JavaScript 一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行
+                動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站
+                的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+              </p>
+              <div class="line"></div>
+            </div>   
+            <div class="box" id="b3">
+              <img src="./CSS.png">              
+              <h3 class="h3">CSS3</h3>
+              <p class="isShow">
+                層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下
+                一版的 CSS4 仍在開發中。
+              </p>
+              <div class="line"></div>
+            </div>
+            <div class="box" id="b4">
+            <img src="./JS.png">           
+            <h3 class="h3">JavaScript</h3>
+            <p class="isShow">
+              JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript 是一門基於原型、函式先行的語言，是
+              一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。
+            </p>
+            <div class="line"></div>
+            </div>
+            <div class="box" id="b5">
+              <img src="./jquery.png">             
+              <h3 class="h3">jQuery</h3>
+              <p class="isShow">
+                jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最高的網站中，有 65% 使用了jQuery，是目前最受歡迎的 JavaScript 函式庫。
+              </p>
+              <div class="line"></div>
+            </div>
+            <div class="box" id="b6">
+              <img src="./bootstrap.png">              
+              <h3 class="h3">Bootstrap</h3>
+              <p class="isShow">
+                Bootstrap 是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與
+                之對應的「後端」是在伺服器上面執行的程式碼）框架，包括 HTML、CSS及JavaScript 的框架，提供字體排印、
+                表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
+              </p>
+              <div class="line"></div>
+            </div>   
+            <div class="box" id="b7">
+              <img src="./sass.png">              
+              <h3 class="h3">Sass</h3>
+              <p class="isShow">
+                Sass是一個將指令碼解析成CSS的手稿語言，即SassScript。Sass包括兩套語法。最開始的語法叫做「縮排語法」，與Haml類似[4]，使用縮排來區分代碼塊，並且用換行將不同規則分隔開。而較新的語法叫做「SCSS」，使用和CSS一樣的塊語法，即使用大括號將不同的規則分開，使用分號將具體的樣式分開。通常情況下，這兩套語法通過.sass和.scss兩個副檔名區分開。
+              </p>
+              <div class="line"></div>
+            </div>
+            <div class="box" id="b8">
+            <img src="./vue.png">            
+            <h3 class="h3">Vue.js</h3>
+            <p class="isShow">
+              Vue.js（/vjuː/，或簡稱為Vue）是一個用於建立使用者介面的開源JavaScript框架，也是一個建立單頁應用的Web應用框架[4]。 2016年一項針對JavaScript的調查表明，Vue有著89%的開發者滿意度。[5]在GitHub上，該專案平均每天能收穫95顆星，[5][6]為Github有史以來星標數第3多的專案。
+            </p>
+            <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
